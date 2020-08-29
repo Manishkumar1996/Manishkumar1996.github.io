@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/static/css/main.372304bc.chunk.css",
-    "main.js": "/static/js/main.a90ab098.chunk.js",
-    "main.js.map": "/static/js/main.a90ab098.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.2c219ed3.js",
-    "runtime-main.js.map": "/static/js/runtime-main.2c219ed3.js.map",
-    "static/js/2.a713c5c1.chunk.js": "/static/js/2.a713c5c1.chunk.js",
-    "static/js/2.a713c5c1.chunk.js.map": "/static/js/2.a713c5c1.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.0020857b6a89a00764fc7552896c8a49.js": "/precache-manifest.0020857b6a89a00764fc7552896c8a49.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/main.372304bc.chunk.css.map": "/static/css/main.372304bc.chunk.css.map",
-    "static/js/2.a713c5c1.chunk.js.LICENSE.txt": "/static/js/2.a713c5c1.chunk.js.LICENSE.txt"
+    "main.css": "https://manishkumar1996.github.io/static/css/main.bb8c9dca.chunk.css",
+    "main.js": "https://manishkumar1996.github.io/static/js/main.0f196681.chunk.js",
+    "main.js.map": "https://manishkumar1996.github.io/static/js/main.0f196681.chunk.js.map",
+    "runtime-main.js": "https://manishkumar1996.github.io/static/js/runtime-main.7ea364d2.js",
+    "runtime-main.js.map": "https://manishkumar1996.github.io/static/js/runtime-main.7ea364d2.js.map",
+    "static/js/2.eff96ffc.chunk.js": "https://manishkumar1996.github.io/static/js/2.eff96ffc.chunk.js",
+    "static/js/2.eff96ffc.chunk.js.map": "https://manishkumar1996.github.io/static/js/2.eff96ffc.chunk.js.map",
+    "index.html": "https://manishkumar1996.github.io/index.html",
+    "precache-manifest.9f21c9ddef3a8bba6dc278e073234aad.js": "https://manishkumar1996.github.io/precache-manifest.9f21c9ddef3a8bba6dc278e073234aad.js",
+    "service-worker.js": "https://manishkumar1996.github.io/service-worker.js",
+    "static/css/main.bb8c9dca.chunk.css.map": "https://manishkumar1996.github.io/static/css/main.bb8c9dca.chunk.css.map",
+    "static/js/2.eff96ffc.chunk.js.LICENSE.txt": "https://manishkumar1996.github.io/static/js/2.eff96ffc.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.2c219ed3.js",
-    "static/js/2.a713c5c1.chunk.js",
-    "static/css/main.372304bc.chunk.css",
-    "static/js/main.a90ab098.chunk.js"
+    "static/js/runtime-main.7ea364d2.js",
+    "static/js/2.eff96ffc.chunk.js",
+    "static/css/main.bb8c9dca.chunk.css",
+    "static/js/main.0f196681.chunk.js"
   ]
 }

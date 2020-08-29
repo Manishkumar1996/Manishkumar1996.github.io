@@ -3,8 +3,8 @@ import {withRouter} from 'react-router-dom';
 import {bindActionCreators} from "redux";
 import {connect} from "react-redux";
 import PropTypes from "prop-types";
-import {margeObjectInList} from "../../../utils";
-import {createUser, deleteUser} from "../../../actions/dashboard/dashboard";
+
+import {createUser, deleteUser, updateUser} from "../../../actions/dashboard/dashboard";
 
 
 class UserCard extends React.Component {
@@ -41,32 +41,31 @@ class UserCard extends React.Component {
     }
 
     handleChangeDescription = (e) => {
-        this.setState({user_description: e.target.value});
+        this.setState({
+            user_description: e.target.value
+        }, () => {
+            this.handleUpdateUser();
+        });
         e.target.style.height = 'auto';
         e.target.style.height = (e.target.scrollHeight) + 'px';
     }
 
+    handleUpdateUser = () => {
+        let {user} = this.props;
+        if (user.id) {
+            this.props.updateUser({user: {...user, ...this.state}});
+        }
+    }
+
     handleCreate = (e) => {
         e.preventDefault();
-
-        let {dashboard: {list, selectId}} = this.props;
-        let team = list.filter(t => t.id === selectId)[0];
-
-        team.users = [{...this.state, id: `user_${team.users.length}`}, ...team.users];
-        let margedList = margeObjectInList(list, team);
-        this.props.createUser({list: margedList});
-
+        this.props.createUser({user: {...this.state}});
         this.setState({user_name: '', user_description: ''});
     }
 
     handleDelete = () => {
-        let {user, dashboard: {list, selectId}} = this.props;
-        let team = list.filter(t => t.id === selectId)[0];
-        let Users = team.users.filter(u => u.id !== user.id);
-        team.users = Users;
-
-        let margedList = margeObjectInList(list, team);
-        this.props.deleteUser({list: margedList});
+        let {user} = this.props;
+        this.props.deleteUser({user});
     }
 
     render() {
@@ -81,7 +80,7 @@ class UserCard extends React.Component {
                         <input type="text" className="form-control" placeholder="Enter here"
                                value={user_name || ''} required
                                onChange={(e) =>
-                                   this.setState({user_name: e.target.value})}/>
+                                   this.setState({user_name: e.target.value}, this.handleUpdateUser)}/>
                     </div>
 
                     <div className="form-group">
@@ -113,6 +112,7 @@ const mapStateToProps = (state) => ({
 const mapDispatchToProps = (dispatch) => bindActionCreators({
     createUser,
     deleteUser,
+    updateUser,
 }, dispatch);
 
 export default connect(mapStateToProps, mapDispatchToProps)(withRouter(UserCard));

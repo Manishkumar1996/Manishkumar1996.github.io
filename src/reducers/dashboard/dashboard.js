@@ -1,48 +1,11 @@
 import {
     CREATE_TEAM,
     CREATE_USER,
+    UPDATE_USER,
     DELETE_USER,
     SELECT_TEAM,
 } from '../../actions/dashboard/dashboard';
-import {selectByDefault} from "../../utils";
-
-let LIST = [
-    {
-        id: 'team_0',
-        team_name: 'Manish',
-        team_type: 'team',
-        users: [
-            {
-                id: 'user_0',
-                user_name: 'Kumar',
-                user_description: 'Hello, Manish Kumar Prajapat',
-            },
-            {
-                id: 'user_1',
-                user_name: 'Prajapat',
-                user_description: 'Hello, Manish Kumar',
-            }
-        ]
-    },
-    {
-        id: 'team_1',
-        team_name: 'Kumar',
-        team_type: 'team',
-        users: [
-            {
-                id: 'user_0',
-                user_name: 'manish kumar',
-                user_description: 'Hello, Kumar Prajapat',
-            },
-            {
-                id: 'user_1',
-                user_name: 'ravi kumar',
-                user_description: 'Hello, Manish',
-            }
-        ]
-    }
-];
-
+import {selectByDefault, userCreate, userDelete, userUpdate} from "../../utils";
 
 const initialState = {
     selectId: '',
@@ -64,9 +27,11 @@ const reducer = (state = initialState, action) => {
                 selectId: selectByDefault([...state.list, action.data], state.selectId)
             };
         case CREATE_USER:
-            return {...state, list: action.data.list};
+            return {...state, list: userCreate(state.list, state.selectId, action.data.user)};
+        case UPDATE_USER:
+            return {...state, list: userUpdate(state.list, state.selectId, action.data.user)};
         case DELETE_USER:
-            return {...state, list: action.data.list};
+            return {...state, list: userDelete(state.list, state.selectId, action.data.user)};
         case SELECT_TEAM:
             return {...state, selectId: action.data.id};
 

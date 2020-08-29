@@ -4,6 +4,7 @@ import {bindActionCreators} from "redux";
 import {connect} from "react-redux";
 import Select from "react-select";
 import {createTeam} from "../../../actions/dashboard/dashboard";
+import {randomIdGenerate} from "../../../utils";
 
 
 class DashboardHeader extends React.Component {
@@ -32,8 +33,7 @@ class DashboardHeader extends React.Component {
 
     handleCreateTeam = (e) => {
         e.preventDefault();
-        let {dashboard: {list}} = this.props
-        this.props.createTeam({id: `team_${list.length}`, ...this.state});
+        this.props.createTeam({id: randomIdGenerate('team_'), ...this.state});
         this.setState({team_type: '', team_name: ''});
     }
 
@@ -51,7 +51,7 @@ class DashboardHeader extends React.Component {
                                     <label htmlFor="pwd">Select Type:</label>
                                     <Select className="custom-react-select" options={this.teamList}
                                             placeholder="choose Any"
-                                            value={this.teamList.filter(team => team.value === team_type)[0]}
+                                            value={this.teamList.filter(team => team.value === team_type)[0] || ''}
                                             onChange={({value}) => this.setState({team_type: value})}/>
                                 </div>
                                 <div className="form-group col">
@@ -76,9 +76,7 @@ class DashboardHeader extends React.Component {
     }
 }
 
-const mapStateToProps = (state) => ({
-    dashboard: state.dashboard.dashboard
-});
+const mapStateToProps = (state) => ({});
 
 const mapDispatchToProps = (dispatch) => bindActionCreators({
     createTeam,
