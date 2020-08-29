@@ -1,0 +1,31 @@
+.sidenavbar-container {
+  padding: 20px 10px 10px;
+  height: calc(100vh - 80px);
+  display: flex;
+  flex-direction: column;
+
+  .sidenavbar-header {
+    font-size: 1.1em;
+    margin-bottom: 15px;
+  }
+
+  .sidenavbar-list-container {
+    flex: 1 1;
+    overflow-y: auto;
+    margin-bottom: 0;
+
+    .sidenavbar-list {
+      background-color: white;
+      padding: 10px 5px;
+      font-size: 0.9em;
+      border-right: 5px solid $dark-orange;
+      margin-bottom: 10px;
+      cursor: pointer;
+
+      &.active {
+        background-color: $light-orange;
+        color: white;
+      }
+    }
+  }
+}

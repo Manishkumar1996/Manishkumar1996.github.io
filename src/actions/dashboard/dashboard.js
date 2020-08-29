@@ -1,19 +1,25 @@
-export const FETCH_REPORT_SHEETS = 'FETCH_REPORT_SHEETS';
-export const FETCH_REPORT_SHEETS_RESULT = 'FETCH_REPORT_SHEETS_RESULT';
-export const FETCH_REPORT_SHEETS_ERROR = 'FETCH_REPORT_SHEETS_ERROR';
-export const FETCH_REPORT_SHEETS_RETRY = 'FETCH_REPORT_SHEETS_RETRY';
+export const CREATE_TEAM = 'CREATE_TEAM';
+export const CREATE_USER = 'CREATE_USER';
+export const DELETE_USER = 'DELETE_USER';
+export const SELECT_TEAM = 'SELECT_TEAM';
 
-export const FETCH_REPORT_SHEET = 'FETCH_REPORT_SHEET';
-export const FETCH_REPORT_SHEET_RESULT = 'FETCH_REPORT_SHEET_RESULT';
-export const FETCH_REPORT_SHEET_ERROR = 'FETCH_REPORT_SHEET_ERROR';
-export const FETCH_REPORT_SHEET_RETRY = 'FETCH_REPORT_SHEET_RETRY';
-
-export const fetchReportSheets = () => ({
-    type: FETCH_REPORT_SHEETS,
+export const createTeam = (data) => ({
+    type: CREATE_TEAM,
+    data
 });
 
 
-export const fetchReportSheet = (data) => ({
-    type: FETCH_REPORT_SHEET,
+export const createUser = (data) => ({
+    type: CREATE_USER,
+    data
+});
+
+export const deleteUser = (data) => ({
+    type: DELETE_USER,
+    data
+});
+
+export const selectTeam = (data) => ({
+    type: SELECT_TEAM,
     data
 });

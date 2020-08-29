@@ -1,8 +1,16 @@
 .dashboard-container {
   border: 1px solid $primary-color;
-}
 
-.dashboard-screen {
-  height: 500px;
-  background-color: $brand-color;
+  .dashboard-team-user-container {
+    display: flex;
+
+    .dashboard-team-col {
+      flex: 1 1 350px;
+      background-color: $secondary-color;
+    }
+
+    .dashboard-user-col {
+      flex: 1 1 100%;
+    }
+  }
 }

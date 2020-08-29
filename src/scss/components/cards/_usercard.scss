@@ -1,0 +1,38 @@
+.user-card {
+  background-color: $primary-color;
+  padding: 10px;
+
+  .form-group {
+    margin-bottom: 0;
+
+    .form-label {
+      font-size: 0.7em;
+      margin-bottom: 0;
+    }
+
+    .form-control {
+      font-size: 0.8em;
+      height: auto;
+      padding: .300rem .75rem;
+
+      &:focus {
+        border-color: #ced4da;
+        box-shadow: none;
+      }
+    }
+  }
+
+  .user-description {
+    max-height: 150px;
+    margin-bottom: 5px;
+  }
+
+  .user-card-button {
+    width: 100%;
+    color: white;
+
+    &:active {
+      color: white !important;
+    }
+  }
+}

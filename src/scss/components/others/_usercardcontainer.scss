@@ -1,0 +1,27 @@
+.user-card-container {
+  padding: 20px 10px 0;
+  height: calc(100vh - 80px);
+  display: flex;
+  flex-direction: column;
+
+  .user-container-heading {
+    font-size: 1.3em;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid $primary-color;
+  }
+
+  .user-cards {
+    flex: 1 1;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: start;
+
+    .user-card {
+      width: 25%;
+      margin: 0 10px 15px;
+    }
+  }
+}

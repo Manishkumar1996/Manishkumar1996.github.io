@@ -1,20 +1,52 @@
 import {
-    FETCH_REPORT_SHEETS,
-    FETCH_REPORT_SHEETS_RESULT,
-    FETCH_REPORT_SHEETS_ERROR,
-    FETCH_REPORT_SHEETS_RETRY,
-
-    FETCH_REPORT_SHEET,
-    FETCH_REPORT_SHEET_RESULT,
-    FETCH_REPORT_SHEET_ERROR,
-    FETCH_REPORT_SHEET_RETRY,
+    CREATE_TEAM,
+    CREATE_USER,
+    DELETE_USER,
+    SELECT_TEAM,
 } from '../../actions/dashboard/dashboard';
+import {selectByDefault} from "../../utils";
+
+let LIST = [
+    {
+        id: 'team_0',
+        team_name: 'Manish',
+        team_type: 'team',
+        users: [
+            {
+                id: 'user_0',
+                user_name: 'Kumar',
+                user_description: 'Hello, Manish Kumar Prajapat',
+            },
+            {
+                id: 'user_1',
+                user_name: 'Prajapat',
+                user_description: 'Hello, Manish Kumar',
+            }
+        ]
+    },
+    {
+        id: 'team_1',
+        team_name: 'Kumar',
+        team_type: 'team',
+        users: [
+            {
+                id: 'user_0',
+                user_name: 'manish kumar',
+                user_description: 'Hello, Kumar Prajapat',
+            },
+            {
+                id: 'user_1',
+                user_name: 'ravi kumar',
+                user_description: 'Hello, Manish',
+            }
+        ]
+    }
+];
 
 
 const initialState = {
-    detail: {},
+    selectId: '',
     list: [],
-    isFetchingList: false,
     isFetching: false,
     error: false,
     message: null,
@@ -25,23 +57,18 @@ const initialState = {
 const reducer = (state = initialState, action) => {
     switch (action.type) {
 
-        case FETCH_REPORT_SHEETS:
-            return {...state, isFetchingList: true, error: false, message: null, retry: false};
-        case FETCH_REPORT_SHEETS_RESULT:
-            return {...state, isFetchingList: false, list: action.data};
-        case FETCH_REPORT_SHEETS_ERROR:
-            return {...state, isFetchingList: false, error: true, message: action.message};
-        case FETCH_REPORT_SHEETS_RETRY:
-            return {...state, isFetchingList: false, retry: true, message: action.message};
-
-        case FETCH_REPORT_SHEET:
-            return {...state, isFetching: true, error: false, message: null, retry: false};
-        case FETCH_REPORT_SHEET_RESULT:
-            return {...state, isFetching: false, detail: action.data};
-        case FETCH_REPORT_SHEET_ERROR:
-            return {...state, isFetching: false, error: true, message: action.message};
-        case FETCH_REPORT_SHEET_RETRY:
-            return {...state, isFetching: false, retry: true, message: action.message};
+        case CREATE_TEAM:
+            return {
+                ...state,
+                list: [...state.list, action.data],
+                selectId: selectByDefault([...state.list, action.data], state.selectId)
+            };
+        case CREATE_USER:
+            return {...state, list: action.data.list};
+        case DELETE_USER:
+            return {...state, list: action.data.list};
+        case SELECT_TEAM:
+            return {...state, selectId: action.data.id};
 
         default:
             return {...state};

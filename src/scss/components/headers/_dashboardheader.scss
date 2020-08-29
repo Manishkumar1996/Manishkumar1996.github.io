@@ -1,0 +1,88 @@
+.dashboard-header-container {
+  background-color: $secondary-color;
+  padding: 5px 2px 0;
+
+  .dashboard-header {
+    background-color: $primary-color;
+    padding: 5px 10px;
+    display: flex;
+    justify-content: flex-end;
+
+    .dashboard-team-create {
+      flex: 0 1 50%;
+      background-color: white;
+      padding: 0 8px 6px;
+
+      .form-group {
+        margin-bottom: 0;
+
+        label {
+          font-size: 0.7em;
+          margin-bottom: 0;
+        }
+
+        .form-control {
+          font-size: 0.8em;
+          background-color: $primary-color;
+          height: auto;
+          padding: .300rem .75rem;
+
+          &:focus {
+            background-color: $primary-color;
+            border-color: #ced4da;
+            box-shadow: none;
+          }
+        }
+      }
+
+      .team-create-button {
+        padding: 5px 30px;
+        font-size: 1em;
+        margin-top: 10px;
+        color: white;
+      }
+
+      .custom-react-select {
+
+        .css-yk16xz-control, .css-1pahdxg-control {
+          background-color: $primary-color;
+          box-shadow: none;
+          border: 0;
+          min-height: auto;
+
+          .css-g1d714-ValueContainer {
+            padding: 0 8px;
+          }
+
+          .css-tlfecz-indicatorContainer, .css-1gtu0rj-indicatorContainer {
+            padding: 3px 8px;
+          }
+        }
+
+        .css-26l3qy-menu {
+          background-color: $primary-color;
+
+          .css-9gakcf-option, .css-1n7v3ny-option {
+            background-color: $primary-color;
+            padding-top: 3px;
+            padding-bottom: 3px;
+            color: white;
+          }
+
+          .css-9gakcf-option {
+            color: black;
+          }
+        }
+
+        .css-1uccc91-singleValue, .css-1wa3eu0-placeholder {
+          font-size: 0.8em;
+        }
+
+
+        .css-6q0nyr-Svg {
+          fill: grey;
+        }
+      }
+    }
+  }
+}
