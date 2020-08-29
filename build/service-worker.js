@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/Manishkumar1996.github.io/precache-manifest.10c90b27c5b6858e695ef4a7e83de01d.js"
+  "/manishkumar1996.github.io/precache-manifest.c7dba9b7c8d0a41d75770628540c14a4.js"
 );
 
 self.addEventListener('message', (event) => {
@@ -33,7 +33,7 @@ workbox.core.clientsClaim();
 self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute(workbox.precaching.getCacheKeyForURL("/Manishkumar1996.github.io/index.html"), {
+workbox.routing.registerNavigationRoute(workbox.precaching.getCacheKeyForURL("/manishkumar1996.github.io/index.html"), {
 
     blacklist: [/^\/_/, /\/[^\/?]+\.[^\/]+$/],
 });

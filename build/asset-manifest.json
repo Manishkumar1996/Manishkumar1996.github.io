@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/Manishkumar1996.github.io/static/css/main.bb8c9dca.chunk.css",
-    "main.js": "/Manishkumar1996.github.io/static/js/main.6be26313.chunk.js",
-    "main.js.map": "/Manishkumar1996.github.io/static/js/main.6be26313.chunk.js.map",
-    "runtime-main.js": "/Manishkumar1996.github.io/static/js/runtime-main.fd773aa3.js",
-    "runtime-main.js.map": "/Manishkumar1996.github.io/static/js/runtime-main.fd773aa3.js.map",
-    "static/js/2.a6f43ff1.chunk.js": "/Manishkumar1996.github.io/static/js/2.a6f43ff1.chunk.js",
-    "static/js/2.a6f43ff1.chunk.js.map": "/Manishkumar1996.github.io/static/js/2.a6f43ff1.chunk.js.map",
-    "index.html": "/Manishkumar1996.github.io/index.html",
-    "precache-manifest.10c90b27c5b6858e695ef4a7e83de01d.js": "/Manishkumar1996.github.io/precache-manifest.10c90b27c5b6858e695ef4a7e83de01d.js",
-    "service-worker.js": "/Manishkumar1996.github.io/service-worker.js",
-    "static/css/main.bb8c9dca.chunk.css.map": "/Manishkumar1996.github.io/static/css/main.bb8c9dca.chunk.css.map",
-    "static/js/2.a6f43ff1.chunk.js.LICENSE.txt": "/Manishkumar1996.github.io/static/js/2.a6f43ff1.chunk.js.LICENSE.txt"
+    "main.css": "/manishkumar1996.github.io/static/css/main.bb8c9dca.chunk.css",
+    "main.js": "/manishkumar1996.github.io/static/js/main.57d6e39c.chunk.js",
+    "main.js.map": "/manishkumar1996.github.io/static/js/main.57d6e39c.chunk.js.map",
+    "runtime-main.js": "/manishkumar1996.github.io/static/js/runtime-main.f1473793.js",
+    "runtime-main.js.map": "/manishkumar1996.github.io/static/js/runtime-main.f1473793.js.map",
+    "static/js/2.dfb926e3.chunk.js": "/manishkumar1996.github.io/static/js/2.dfb926e3.chunk.js",
+    "static/js/2.dfb926e3.chunk.js.map": "/manishkumar1996.github.io/static/js/2.dfb926e3.chunk.js.map",
+    "index.html": "/manishkumar1996.github.io/index.html",
+    "precache-manifest.c7dba9b7c8d0a41d75770628540c14a4.js": "/manishkumar1996.github.io/precache-manifest.c7dba9b7c8d0a41d75770628540c14a4.js",
+    "service-worker.js": "/manishkumar1996.github.io/service-worker.js",
+    "static/css/main.bb8c9dca.chunk.css.map": "/manishkumar1996.github.io/static/css/main.bb8c9dca.chunk.css.map",
+    "static/js/2.dfb926e3.chunk.js.LICENSE.txt": "/manishkumar1996.github.io/static/js/2.dfb926e3.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.fd773aa3.js",
-    "static/js/2.a6f43ff1.chunk.js",
+    "static/js/runtime-main.f1473793.js",
+    "static/js/2.dfb926e3.chunk.js",
     "static/css/main.bb8c9dca.chunk.css",
-    "static/js/main.6be26313.chunk.js"
+    "static/js/main.57d6e39c.chunk.js"
   ]
 }
