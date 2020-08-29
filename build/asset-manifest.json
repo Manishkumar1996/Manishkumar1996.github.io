@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "https://manishkumar1996.github.io/static/css/main.bb8c9dca.chunk.css",
-    "main.js": "https://manishkumar1996.github.io/static/js/main.0f196681.chunk.js",
-    "main.js.map": "https://manishkumar1996.github.io/static/js/main.0f196681.chunk.js.map",
-    "runtime-main.js": "https://manishkumar1996.github.io/static/js/runtime-main.7ea364d2.js",
-    "runtime-main.js.map": "https://manishkumar1996.github.io/static/js/runtime-main.7ea364d2.js.map",
-    "static/js/2.eff96ffc.chunk.js": "https://manishkumar1996.github.io/static/js/2.eff96ffc.chunk.js",
-    "static/js/2.eff96ffc.chunk.js.map": "https://manishkumar1996.github.io/static/js/2.eff96ffc.chunk.js.map",
-    "index.html": "https://manishkumar1996.github.io/index.html",
-    "precache-manifest.9f21c9ddef3a8bba6dc278e073234aad.js": "https://manishkumar1996.github.io/precache-manifest.9f21c9ddef3a8bba6dc278e073234aad.js",
-    "service-worker.js": "https://manishkumar1996.github.io/service-worker.js",
-    "static/css/main.bb8c9dca.chunk.css.map": "https://manishkumar1996.github.io/static/css/main.bb8c9dca.chunk.css.map",
-    "static/js/2.eff96ffc.chunk.js.LICENSE.txt": "https://manishkumar1996.github.io/static/js/2.eff96ffc.chunk.js.LICENSE.txt"
+    "main.css": "/build/static/css/main.bb8c9dca.chunk.css",
+    "main.js": "/build/static/js/main.0f196681.chunk.js",
+    "main.js.map": "/build/static/js/main.0f196681.chunk.js.map",
+    "runtime-main.js": "/build/static/js/runtime-main.85a78c74.js",
+    "runtime-main.js.map": "/build/static/js/runtime-main.85a78c74.js.map",
+    "static/js/2.eff96ffc.chunk.js": "/build/static/js/2.eff96ffc.chunk.js",
+    "static/js/2.eff96ffc.chunk.js.map": "/build/static/js/2.eff96ffc.chunk.js.map",
+    "index.html": "/build/index.html",
+    "precache-manifest.6e28a0160b696ab46a4c26f1e4d21fc1.js": "/build/precache-manifest.6e28a0160b696ab46a4c26f1e4d21fc1.js",
+    "service-worker.js": "/build/service-worker.js",
+    "static/css/main.bb8c9dca.chunk.css.map": "/build/static/css/main.bb8c9dca.chunk.css.map",
+    "static/js/2.eff96ffc.chunk.js.LICENSE.txt": "/build/static/js/2.eff96ffc.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.7ea364d2.js",
+    "static/js/runtime-main.85a78c74.js",
     "static/js/2.eff96ffc.chunk.js",
     "static/css/main.bb8c9dca.chunk.css",
     "static/js/main.0f196681.chunk.js"
