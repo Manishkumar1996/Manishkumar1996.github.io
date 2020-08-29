@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/manishkumar1996.github.io/static/css/main.bb8c9dca.chunk.css",
+    "main.css": "/manishkumar1996.github.io/static/css/main.9fcc1876.chunk.css",
     "main.js": "/manishkumar1996.github.io/static/js/main.57d6e39c.chunk.js",
     "main.js.map": "/manishkumar1996.github.io/static/js/main.57d6e39c.chunk.js.map",
     "runtime-main.js": "/manishkumar1996.github.io/static/js/runtime-main.f1473793.js",
@@ -8,15 +8,15 @@
     "static/js/2.dfb926e3.chunk.js": "/manishkumar1996.github.io/static/js/2.dfb926e3.chunk.js",
     "static/js/2.dfb926e3.chunk.js.map": "/manishkumar1996.github.io/static/js/2.dfb926e3.chunk.js.map",
     "index.html": "/manishkumar1996.github.io/index.html",
-    "precache-manifest.c7dba9b7c8d0a41d75770628540c14a4.js": "/manishkumar1996.github.io/precache-manifest.c7dba9b7c8d0a41d75770628540c14a4.js",
+    "precache-manifest.8671c5d16a679d3c7725e45cbc706c4a.js": "/manishkumar1996.github.io/precache-manifest.8671c5d16a679d3c7725e45cbc706c4a.js",
     "service-worker.js": "/manishkumar1996.github.io/service-worker.js",
-    "static/css/main.bb8c9dca.chunk.css.map": "/manishkumar1996.github.io/static/css/main.bb8c9dca.chunk.css.map",
+    "static/css/main.9fcc1876.chunk.css.map": "/manishkumar1996.github.io/static/css/main.9fcc1876.chunk.css.map",
     "static/js/2.dfb926e3.chunk.js.LICENSE.txt": "/manishkumar1996.github.io/static/js/2.dfb926e3.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.f1473793.js",
     "static/js/2.dfb926e3.chunk.js",
-    "static/css/main.bb8c9dca.chunk.css",
+    "static/css/main.9fcc1876.chunk.css",
     "static/js/main.57d6e39c.chunk.js"
   ]
 }
