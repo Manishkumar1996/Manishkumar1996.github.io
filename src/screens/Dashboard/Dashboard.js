@@ -14,8 +14,6 @@ class Dashboard extends Component {
     }
 
     render() {
-        let {match} = this.props;
-        console.error(this.props);
         return (
             <div className="dashboard-container">
                 <DashboardHeader/>

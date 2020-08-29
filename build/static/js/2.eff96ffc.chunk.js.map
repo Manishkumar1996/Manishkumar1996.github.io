@@ -67,7 +67,7 @@
     "../node_modules/react-input-autosize/lib/AutosizeInput.js",
     "../node_modules/symbol-observable/es/index.js",
     "../node_modules/mini-create-react-context/dist/esm/index.js",
-    "../node_modules/path-to-regexp/index.js",
+    "../node_modules/react-router/node_modules/path-to-regexp/index.js",
     "../node_modules/object-assign/index.js",
     "../node_modules/webpack/buildin/global.js",
     "../node_modules/symbol-observable/es/ponyfill.js",
@@ -97,7 +97,7 @@
     "../node_modules/prop-types/lib/ReactPropTypesSecret.js",
     "../node_modules/react-is/cjs/react-is.production.min.js",
     "../node_modules/webpack/buildin/harmony-module.js",
-    "../node_modules/path-to-regexp/node_modules/isarray/index.js"
+    "../node_modules/react-router/node_modules/isarray/index.js"
   ],
   "names": [
     "module",
