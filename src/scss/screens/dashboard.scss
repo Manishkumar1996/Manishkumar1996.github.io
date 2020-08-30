@@ -12,5 +12,12 @@
     .dashboard-user-col {
       flex: 1 1 100%;
     }
+
+    @media only screen and (max-width: 767px) {
+
+      .dashboard-team-col {
+        flex: 1 1 150px;
+      }
+    }
   }
 }

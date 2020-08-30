@@ -40,4 +40,20 @@
       margin: 0 10px 15px;
     }
   }
+
+  @media only screen and (max-width: 767px) {
+
+    .user-card-container-header {
+      flex-direction: column;
+    }
+
+    .user-cards {
+      flex-wrap: nowrap;
+
+      .user-card {
+        width: 100%;
+        margin: 0 0 15px;
+      }
+    }
+  }
 }

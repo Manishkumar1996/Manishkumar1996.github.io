@@ -85,5 +85,18 @@
         }
       }
     }
+
+    @media only screen and (max-width: 767px) {
+      .dashboard-team-create {
+        flex: 0 1 100%;
+
+        .team-create-button {
+          padding: 5px 10px;
+          font-size: 0.9em;
+        }
+      }
+
+    }
+
   }
 }
